@@ -8,7 +8,7 @@
   <header>
   	<nav>
   		<a href="index.html">
-  			<img src="img/nerds-logo.svg" width="159.87" height="65.02" alt="Логотип сайта">
+  			<img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип сайта">
   		</a>
   		<ul>
   			<li><a href="#">Студия</a></li>
@@ -24,29 +24,55 @@
   <main>
   	<h1>Магазин готовых шаблонов</h1>
     <section>
-      <h2>Фильтр товаров</h2>
-      <section>
-        <h3>Сетка</h3>
-        <ul>
-          <li>Адаптивная</li>
-          <li>Фиксированная</li>
-          <li>Резиновая</li>
-        </ul>
-      </section>
-      <section>
-        <h3>Особенности</h3>
-        <ul>
-          <li>Слайдер</li>
-          <li>Блок преимуществ</li>
-          <li>Новости</li>
-          <li>Галерея</li>
-          <li>Корзина</li>
-        </ul>
-      </section>
-      <button type="submit">Показать</button>       
+      <h2 class="visually-hidden">Фильтр товаров</h2>
+      <form action="https://echo.htmlacademy.ru" method="get">
+        <fieldset>
+          <legend>Сетка:</legend>
+          <ul>
+            <li>
+              <label for="filter-adaptive">Адаптивная</label>
+              <input type="radio" name="view" id="filter-adaptive" value="adaptive" checked>
+            </li>
+            <li>
+              <label for="filter-fixed">Фиксированная</label>
+              <input type="radio" name="view" id="filter-fixed" value="fixed">
+            </li>
+            <li>
+              <label for="filter-rubber">Резиновая</label>
+              <input type="radio" name="view" id="filter-rubber" value="rubber">
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Особенности:</legend>
+          <ul>
+           <li>
+            <label for="filter-slider">Слайдер</label>
+            <input type="checkbox" name="slider" id="filter-slider" checked>
+           </li>
+           <li>
+            <label for="filter-benefits block">Блок преимуществ</label>
+            <input type="checkbox" name="benefits block" id="filter-benefits block">
+           </li>
+           <li>
+            <label for="filter-news">Новости</label>
+            <input type="checkbox" name="news" id="filter-news" checked>
+           </li>
+           <li>
+            <label for="filter-gallery">Галерея</label>
+            <input type="checkbox" name="gallery" id="filter-gallery">
+           </li>
+           <li>
+            <label for="filter-cart">Корзина</label>
+            <input type="checkbox" name="cart" id="filter-cart">
+           </li>
+          </ul>
+        </fieldset>
+        <button type="submit">Показать</button> 
+      </form>    
     </section>
     <section>
-      <h2>Список сайтов</h2>
+      <h2 class="visually-hidden">Список сайтов</h2>
       <ul>
         <li>
           <img src="img/img_sedona.jpg" width="358" height="578" alt="Cайт Sedona">
@@ -59,41 +85,41 @@
         <li>
           <img src="img/img_pink.jpg" width="358" height="578" alt="Cайт Pink">
           <section>
-            <h3><a href="#">Pink</a></h3>
-            <p>Описание сайта</p>
-            <a href="#">Стоимость</a>
+            <h3><a href="#">Pink App</a></h3>
+            <p>Продуктовый лендинг приложения для IOS и Android</p>
+            <a href="#">9900Р</a>
           </section>
         </li>
         <li>
           <img src="img/img_borodinski.jpg" width="358" height="578" alt="Cайт Borodinski">
           <section>
-            <h3><a href="#">Borodinski</a></h3>
-            <p>Описание сайта</p>
-            <a href="#">Стоимость</a>
+            <h3><a href="#">Barbershop</a></h3>
+            <p>Сайт салона красоты. Для мужчин, да.</p>
+            <a href="#">9900Р</a>
           </section>
         </li>
         <li>
           <img src="img/img_mishka.jpg" width="358" height="578" alt="Cайт Miskka">
           <section>
             <h3><a href="#">Miskka</a></h3>
-            <p>Описание сайта</p>
-            <a href="#">Стоимость</a>
+            <p>Интернет-магазин вязаных игрушек</p>
+            <a href="#">9900Р</a>
           </section>
         </li>
         <li>
           <img src="img/img_study.jpg" width="358" height="578" alt="Cайт Study">
           <section>
-            <h3><a href="#">Study</a></h3>
-            <p>Описание сайта</p>
-            <a href="#">Стоимость</a>
+            <h3><a href="#">A plus</a></h3>
+            <p>Лендинг курсов повышения квалификации</p>
+            <a href="#">9900Р</a>
           </section>
         </li>
         <li>
           <img src="img/img_kvast.jpg" width="358" height="578" alt="Cайт Квас">
           <section>
-            <h3><a href="#">Квас</a></h3>
-            <p>Описание сайта</p>
-            <a href="#">Стоимость</a>
+            <h3><a href="#">Кваст</a></h3>
+            <p>Промо-сайт производителя крафтового пива</p>
+            <a href="#">9900Р</a>
           </section>
         </li>
       </ul>

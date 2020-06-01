@@ -8,7 +8,7 @@
   <header>
   	<nav>
   		<a>
-  			<img src="img/nerds-logo.svg" width="159.87" height="65.02" alt="Логотип сайта">
+  			<img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип сайта">
   		</a>
   		<ul>
   			<li><a href="#">Студия</a></li>
@@ -22,9 +22,9 @@
   	</nav>
   </header>	
   <main>
-  	<h1>Нёрдс</h1>
+  	<h1 class="visually-hidden">Главная страница сайта Нёрдс</h1>
   	<section>
-  		<h2>Услуги</h2>
+  		<h2 class="visually-hidden">Услуги</h2>
   		<ul>
   			<li>
   				<h3>Вебсайты</h3>
@@ -46,7 +46,7 @@
   </main>
   <footer>
     <section>
-      <h2>Cоцсети</h2>
+      <h2 class="visually-hidden">Ссылки на соцсети</h2>
       <ul>
         <li><a href="#">Вконтакте</a></li>
         <li><a href="#">Фейсбук</a></li>
@@ -58,5 +58,18 @@
       <p>Скидка 10% для друзей из социальных сетей.</p>
     </section>
   </footer>
+  <section>
+    <h2>Напишите нам</h2>
+    <form action="https://echo.htmlacademy.ru" method="post">
+        <label for="login-login">Ваше имя:</label>
+        <input type="text" name="login" id="login-login" placeholder="Имя Фамилия" required>
+        <label for="email-email">Ваше email:</label>
+        <input type="email" name="email" id="email-email" placeholder="email@example.com" required>
+        <label for="comment-comment">Текст письма:</label>
+        <textarea name="comment" id="comment-comment" placeholder="В свободной форме" required></textarea>
+        <button type="submit">Отправить</button>required
+    </form>
+    <button type="button">Закрыть</button>
+  </section>
   </body>
 </html>
