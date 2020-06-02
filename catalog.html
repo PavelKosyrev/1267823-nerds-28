@@ -31,15 +31,15 @@
           <ul>
             <li>
               <label for="filter-adaptive">Адаптивная</label>
-              <input type="radio" name="view" id="filter-adaptive" value="adaptive" checked>
+              <input type="radio" name="grid" id="filter-adaptive" value="adaptive" checked>
             </li>
             <li>
               <label for="filter-fixed">Фиксированная</label>
-              <input type="radio" name="view" id="filter-fixed" value="fixed">
+              <input type="radio" name="grid" id="filter-fixed" value="fixed">
             </li>
             <li>
-              <label for="filter-rubber">Резиновая</label>
-              <input type="radio" name="view" id="filter-rubber" value="rubber">
+              <label for="filter-responsive">Резиновая</label>
+              <input type="radio" name="grid" id="filter-responsive" value="responsive">
             </li>
           </ul>
         </fieldset>
@@ -51,8 +51,8 @@
             <input type="checkbox" name="slider" id="filter-slider" checked>
            </li>
            <li>
-            <label for="filter-benefits block">Блок преимуществ</label>
-            <input type="checkbox" name="benefits block" id="filter-benefits block">
+            <label for="filter-benefits-block">Блок преимуществ</label>
+            <input type="checkbox" name="benefits-block" id="filter-benefits-block">
            </li>
            <li>
             <label for="filter-news">Новости</label>
@@ -129,9 +129,9 @@
   	<section>
   		<h2>Cоцсети</h2>
   		<ul>
-  			<li><a href="#">Вконтакте</a></li>
-  			<li><a href="#">Фейсбук</a></li>
-  			<li><a href="#">Инстаграм</a></li>
+  			<li><a href="#" aria-label="Вконтакте"></a></li>
+  			<li><a href="#" aria-label="Фейсбук"></a></li>
+  			<li><a href="#" aria-label="Инстаграм"></a></li>
   		</ul>
   	</section>
     <section>
@@ -139,5 +139,18 @@
       <p>Скидка 10% для друзей из социальных сетей.</p>
     </section>
   </footer>
+  <section>
+    <h2>Напишите нам</h2>
+    <form action="https://echo.htmlacademy.ru" method="post">
+        <label for="login-login">Ваше имя:</label>
+        <input type="text" name="login" id="login-login" placeholder="Имя Фамилия" required>
+        <label for="email-email">Ваше email:</label>
+        <input type="email" name="email" id="email-email" placeholder="email@example.com" required>
+        <label for="comment-comment">Текст письма:</label>
+        <textarea name="comment" id="comment-comment" placeholder="В свободной форме" required></textarea>
+        <button type="submit">Отправить</button>
+    </form>
+    <button type="button">Закрыть</button>
+  </section>
   </body>
 </html>
