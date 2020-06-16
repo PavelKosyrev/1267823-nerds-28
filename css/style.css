@@ -19,27 +19,29 @@
 }
 
 .visually-hidden {
-position: absolute;
-width: 1px;
-height: 1px;
-margin: -1px;
-border: 0;
-padding: 0;
-clip: rect(0 0 0 0);
-overflow: hidden;
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
 }
 
+
 /*Global*/
+
 body {
-    min-width: 1440px;
-    margin: 0;
-    padding: 0;
-    font-family: "Roboto", Arial, sans-serif;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 400;
-    color: var(--basic-light-black);
-    background-color: var(--basic-white);
+	min-width: 1440px;
+	margin: 0;
+	padding: 0;
+	font-family: "Roboto", Arial, sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+	color: var(--basic-light-black);
+	background-color: var(--basic-white);
 }
 
 a {
@@ -51,12 +53,77 @@ img {
 	height: auto;
 }
 
+
+.page {
+	height: 100%;
+}
+
+.page-body {
+	min-height: 100%;
+	display: grid;
+	grid-template-rows: min-content 1fr min-content;
+	align-content: start;
+}
+
+.main-header {
+	outline: 5px solid rgba(0, 255, 0, 0.3);
+    outline-offset: -5px;
+}
+
+.main-header-logo {
+	width: 200px;
+    height: 65px;
+	outline: 5px solid rgba(255, 0, 0, 0.3);
+	outline-offset: -5px;
+}
+
+.site-navigation {
+	width: 800px;
+	outline: 5px solid rgba(0, 255, 255, 0.3);
+	outline-offset: -5px;
+}
+
+.user-navigation {
+  max-width: 160px;
+  outline: 5px solid rgba(255, 0, 255, 0.3);
+  outline-offset: -5px;
+}
+
+.container {
+	width: 1160px;
+    margin: 0 auto;
+    padding: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*Navigation*/
+
 .navigation {
 	font-weight: 500;
 	line-height: 30px;
 	text-transform: uppercase;
 	background-color: var(--basic-gray);
+}
+
+.navigation .container {
+	display: flex;
+	justify-content: space-between;
 }
 
 .navigation a:active {
@@ -67,17 +134,16 @@ img {
 	opacity: 1;
 }
 
-
-.site-navigation, 
+.site-navigation,
 .user-navigation {
- 	margin: 0;
- 	padding: 0;
- 	list-style: none;
+	margin: 0;
+	padding: 0;
+	list-style: none;
 }
 
-.site-navigation a, 
+.site-navigation a,
 .user-navigation a {
- 	color: var(--basic-black)
+	color: var(--basic-black)
 }
 
 .site-navigation a:hover,
@@ -95,10 +161,23 @@ img {
 
 
 /*Services*/
+.services {
+	outline: 5px solid rgba(255, 0, 0 , 0.3);
+	outline-offset: -5px;
+}
+
 .services-list {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	column-gap: 100px;
 	margin: 0;
 	padding: 0;
 	list-style: none;
+}
+
+.services-list li {
+	outline: 5px solid rgba(0, 255, 255 , 0.3);
+	outline-offset: -5px;
 }
 
 .services-list h3 {
@@ -118,6 +197,7 @@ img {
 
 
 /* Услуги-Вебсайты */
+
 .services-list-one {
 	background-color: var(--basic-red);
 }
@@ -130,11 +210,11 @@ img {
 	color: rgb(255, 255, 255, 0.3);
 	box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 	background-color: var(--basic-extra-red);
-} 
-
+}
 
 
 /* Услуги-Приложения */
+
 .services-list-two {
 	background-color: var(--basic-green);
 }
@@ -147,11 +227,11 @@ img {
 	color: rgb(255, 255, 255, 0.3);
 	box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 	background-color: var(--basic-extra-green);
-} 
-
+}
 
 
 /* Услуги-Презентации */
+
 .services-list-three {
 	background-color: var(--basic-yellow);
 }
@@ -164,15 +244,17 @@ img {
 	color: rgb(255, 255, 255, 0.3);
 	box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 	background-color: var(--basic-extra-yellow);
-} 
+}
+
 
 /* Filters */
+
 .filters legend {
 	font-weight: 700;
-    font-size: 18px;
-    line-height: 30px;
-    text-transform: uppercase;
-    color: var(--basic-black);
+	font-size: 18px;
+	line-height: 30px;
+	text-transform: uppercase;
+	color: var(--basic-black);
 }
 
 .filters ul {
@@ -184,13 +266,13 @@ img {
 
 .filters button {
 	height: 50px;
-    width: 260px;
+	width: 260px;
 	font: inherit;
 	font-weight: 500;
 	line-height: 18px;
 	text-align: center;
 	text-transform: uppercase;
-    color: var(--basic-black);
+	color: var(--basic-black);
 	background-color: var(--basic-gray);
 	border-radius: 3px;
 	outline: none;
@@ -210,8 +292,9 @@ img {
 
 
 /* Catalog */
-.shop h1{
-	padding: 0;
+
+.shop h1 {
+	margin: 0;
 	font-weight: 500;
 	font-size: 55px;
 	line-height: 30px;
@@ -227,10 +310,10 @@ img {
 
 .catalog-item h3 a {
 	font-weight: 700;
-    font-size: 18px;
-    line-height: 30px;
-    text-transform: uppercase;
-    color: var(--basic-black);
+	font-size: 18px;
+	line-height: 30px;
+	text-transform: uppercase;
+	color: var(--basic-black);
 }
 
 .catalog-item p {
@@ -248,15 +331,14 @@ img {
 	text-transform: uppercase;
 	color: var(--basic-white);
 	background-color: var(--basic-red);
-    
 }
 
 .catalog-item h3 a:hover {
-	color: var(--basic-red); 
+	color: var(--basic-red);
 }
 
 .catalog-item h3 a:active {
-	color: var(--basic-black); 
+	color: var(--basic-black);
 	opacity: 0.3;
 }
 
@@ -271,6 +353,22 @@ img {
 
 
 /*Footer*/
+.main-footer {
+	outline: 5px solid rgba(255, 0, 0, 0.7);
+	outline-offset: -5px;
+}
+
+.main-footer .container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.footer-social {
+	width: 360px;
+	outline: 5px solid rgba(0, 255, 255, 0.7);
+	outline-offset: -5px;
+}
+
 .footer-social ul {
 	margin: 0;
 	padding: 0;
@@ -278,7 +376,7 @@ img {
 }
 
 .social-vk {
-    background: linear-gradient(0deg, #E1E1E1, #E1E1E1), #FFFFFF;
+	background: linear-gradient(0deg, #E1E1E1, #E1E1E1), #FFFFFF;
 }
 
 .social-vk:hover {
@@ -290,7 +388,7 @@ img {
 }
 
 .social-fb {
-    background: linear-gradient(0deg, #E1E1E1, #E1E1E1), #FFFFFF;
+	background: linear-gradient(0deg, #E1E1E1, #E1E1E1), #FFFFFF;
 }
 
 .social-fb:hover {
@@ -302,7 +400,7 @@ img {
 }
 
 .social-inst {
-    background: linear-gradient(0deg, #E1E1E1, #E1E1E1), #FFFFFF;
+	background: linear-gradient(0deg, #E1E1E1, #E1E1E1), #FFFFFF;
 }
 
 .social-inst:hover {
@@ -313,23 +411,20 @@ img {
 	fill-opacity: 0.3;
 }
 
+.page-footer {
+	width: 800px;
+	outline: 5px solid rgba(0, 255, 0, 0.7);
+	outline-offset: -5px;
+}
+
 .page-footer h2 {
 	font-size: 36px;
-    line-height: 36px;
-    font-weight: 700;
-    color: var(--basic-black);
+	line-height: 36px;
+	font-weight: 700;
+	color: var(--basic-black);
 }
 
 .page-footer p {
-    line-height: 22px;
-    color: var(--basic-dark-gray);
+	line-height: 22px;
+	color: var(--basic-dark-gray);
 }
-
-
-
-
-
-
-
-
-

@@ -1,52 +1,79 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>Дизайн-студия «Nerds»</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
-  <header>
+  <body class="page-body">
+  <header class="main-header">
   	 <nav class="navigation">
-  		   <a>
+         <div class="container">
+  		   <a class="main-header-logo">
   			   <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип сайта">
   		   </a>
-  		   <ul class="site-navigation">
-  			   <li><a href="#">Студия</a></li>
-  			   <li><a href="#">Клиенты</a></li>
-  			   <li><a href="catalog.html">Магазин</a></li>
-  			   <li><a href="#">Контакты</a></li>
-  		   </ul>
-         <ul class="user-navigation">
-           <li><a href="#">Корзина</a></li>
+         <ul class="site-navigation">
+          <li><a href="#">Студия</a></li>
+          <li><a href="#">Клиенты</a></li>
+          <li><a href="catalog.html">Магазин</a></li>
+          <li><a href="#">Контакты</a></li>
          </ul>
+         <ul class="user-navigation">
+          <li><a href="#">Корзина</a></li>
+         </ul>
+         </div>
   	 </nav>
   </header>	
   <main>
   	<h1 class="visually-hidden">Главная страница сайта Нёрдс</h1>
-  	<section>
+    <section>
+      <h2 class="visually-hidden">Информация о нас</h2>
+      <h3>Долго, дорого, скрупулезно!</h3>
+      <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+      <a href="#">Узнать больше</a>
+    </section>
+  	<section class="services">
   		<h2 class="visually-hidden">Услуги</h2>
   		<ul class="services-list">
   			<li>
   				<h3>Вебсайты</h3>
   				<p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-  				<a href="#" class="services-list-one"><span>Заказать</span></a>
+  				<a href="#" class="services-list-one">Заказать</a>
   			</li>
   			<li>
   				<h3>Приложения</h3>
   				<p>Покорите топ-10 приложений в AppStore и Google Play</p>
-  				<a href="#" class="services-list-two"><span>Заказать</span></a>
+  				<a href="#" class="services-list-two">Заказать</a>
   			</li>
   			<li>
   				<h3>Презентации</h3>
   				<p>Вы даже не подозреваете, насколько вы изумительны!</p>
-  				<a href="#" class="services-list-three"><span>Заказать</span></a>
+  				<a href="#" class="services-list-three">Заказать</a>
   			</li>
   		</ul>
   	</section>
+    <section>
+      <h2 class="visually-hidden">Наши преимущества</h2>
+      <h3>Мы — маленькая, но гордая дизайн-студия из Краснодара.</h2>
+      <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+      <ul>Выполняем заказы на разработку:
+        <li>Веб-сайтов любой сложности</li>
+        <li>Мобильных приложений для iOS и Android</li>
+        <li>Слайдшоу и видео для корпоративных презентаций</li>
+      </ul>
+    </section>
+    <section>
+      <h2 class="visually-hidden">Как мы работаем</h2>
+      <ul>C 2004 года любим точность во всем:
+        <li><span>146%</span><br>Уровень самоотдачи</li>
+        <li><span>100%</span><br>Соблюдение сроков</li>
+        <li><span>50%</span><br>Минимальная предоплата</li>
+      </ul>
+    </section>
   </main>
-  <footer>
+  <footer class="main-footer">
+    <div class="container">
     <section  class="footer-social">
       <h2 class="visually-hidden">Ссылки на соцсети</h2>
       <ul>
@@ -59,6 +86,7 @@
       <h2>Давайте дружить, это выгодно!</h2>
       <p>Скидка 10% для друзей из социальных сетей.</p>
     </section>
+  </div>
   </footer>
   <section>
     <h2>Напишите нам</h2>
