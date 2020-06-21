@@ -65,6 +65,14 @@ img {
 	align-content: start;
 }
 
+.container {
+	width: 1160px;
+    margin: 0 auto;
+    padding: 0px;
+}
+
+
+/*Navigation*/
 .main-header {
 	outline: 5px solid rgba(0, 255, 0, 0.3);
     outline-offset: -5px;
@@ -77,43 +85,6 @@ img {
 	outline-offset: -5px;
 }
 
-.site-navigation {
-	width: 800px;
-	outline: 5px solid rgba(0, 255, 255, 0.3);
-	outline-offset: -5px;
-}
-
-.user-navigation {
-  max-width: 160px;
-  outline: 5px solid rgba(255, 0, 255, 0.3);
-  outline-offset: -5px;
-}
-
-.container {
-	width: 1160px;
-    margin: 0 auto;
-    padding: 0px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*Navigation*/
-
 .navigation {
 	font-weight: 500;
 	line-height: 30px;
@@ -123,7 +94,6 @@ img {
 
 .navigation .container {
 	display: flex;
-	justify-content: space-between;
 }
 
 .navigation a:active {
@@ -132,6 +102,21 @@ img {
 
 .navigation a:not([href]) {
 	opacity: 1;
+}
+
+.site-navigation {
+	display: flex;
+	flex-wrap: wrap;
+	width: 800px;
+	outline: 5px solid rgba(0, 255, 255, 0.3);
+	outline-offset: -5px;
+}
+
+.user-navigation {
+  width: 260px;
+  text-align: end;
+  outline: 5px solid rgba(255, 0, 255, 0.3);
+  outline-offset: -5px;
 }
 
 .site-navigation,
@@ -143,6 +128,7 @@ img {
 
 .site-navigation a,
 .user-navigation a {
+	/*display: block;*/
 	color: var(--basic-black)
 }
 
@@ -159,12 +145,64 @@ img {
 	opacity: 0.3;
 }
 
+/*Информация*/
+.main-info {
+	background-color: var(--basic-gray);
+	outline: 5px solid rgba(0, 255, 0, 0.3);
+    outline-offset: -5px;
+}
+
+.main-info .container {
+	display: flex;
+	flex-direction: column;
+}
+
+.main-info h3 {
+	margin: 0;
+	padding: 0;
+	font-weight: 500;
+	font-size: 55px;
+	line-height: 55px;
+	color: var(--basic-black);
+	outline: 5px solid rgba(255, 0, 0 , 0.3);
+	outline-offset: -5px;
+}
+
+.main-info p {
+	margin: 0;
+	padding: 0;
+	outline: 5px solid rgba(255, 0, 0 , 0.3);
+	outline-offset: -5px;
+}
+
+.main-info a {
+	font-weight: 500;
+	line-height: 18px;
+	text-transform: uppercase;
+	color: var(--basic-white);
+	background-color: var(--basic-red);
+	border-radius: 3px;
+	
+}
+
+.main-info a:hover {
+	background-color: var(--basic-dark-red);
+}
+
+.main-info a:active {
+	color: rgb(255, 255, 255, 0.3);
+	box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+	background-color: var(--basic-extra-red);
+}
+
 
 /*Services*/
 .services {
 	outline: 5px solid rgba(255, 0, 0 , 0.3);
 	outline-offset: -5px;
 }
+
+
 
 .services-list {
 	display: grid;
@@ -246,6 +284,135 @@ img {
 	background-color: var(--basic-extra-yellow);
 }
 
+/*Преимущества*/
+.container .box-1 {
+	display: flex;
+}
+
+.advantages {
+	width: 800px;
+	outline: 5px solid rgba(0, 255, 255, 0.3);
+	outline-offset: -5px;
+}
+
+.advantages h3 {
+	font-weight: 500;
+	font-size: 45px;
+	line-height: 45px;
+	color: var(--basic-black);
+	outline: 5px solid rgba(255, 0, 0 , 0.3);
+	outline-offset: -5px;
+}
+
+.advantages h3+p {
+	outline: 5px solid rgba(255, 0, 0 , 0.3);
+	outline-offset: -5px;
+}
+
+.advantages p+p{
+	font-weight: 700;
+	text-transform: uppercase;
+	outline: 5px solid rgba(255, 0, 0 , 0.3);
+	outline-offset: -5px;
+}
+
+.advantages ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	outline: 5px solid rgba(255, 0, 0 , 0.3);
+	outline-offset: -5px;
+}
+
+/*Как мы работаем*/
+
+.work {
+	outline: 5px solid rgba(0, 255, 255, 0.3);
+	outline-offset: -5px;
+}
+
+.work img {
+	outline: 5px solid rgba(255, 0, 0 , 0.3);
+	outline-offset: -5px;
+}
+
+.work p {
+	font-weight: 700;
+	text-align: center;
+	text-transform: uppercase;
+	outline: 5px solid rgba(255, 0, 0 , 0.3);
+	outline-offset: -5px;
+}
+
+.work ul {
+	display: flex;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	line-height: 18px;
+	outline: 5px solid rgba(255, 0, 0 , 0.3);
+	outline-offset: -5px;
+}
+
+.work span {
+	font-weight: 700;
+	font-size: 45px;
+	line-height: 64px;
+	color: var(--basic-black);
+}
+
+/*Готовые шаблоны на главной странице*/
+.sites {
+	outline: 5px solid rgba(0, 255, 240 , 0.3);
+	outline-offset: -5px;
+}
+
+.sites a {
+	opacity: 0.2;
+}
+
+.sites a:hover {
+	opacity: 1;
+}
+
+.sites a:active {
+	opacity: 0.1;
+}
+
+
+.sites ul{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.sites li{
+	outline: 5px solid rgba(255, 0, 0 , 0.3);
+	outline-offset: -5px;
+}
+
+.sites .html-academy {
+	width: 199px;
+	height: 68px;
+}
+
+.sites .borodinski {
+	width: 209px;
+	height: 90px;
+}
+
+.sites .pink {
+	width: 185px;
+	height: 52px;
+}
+
+.sites .mishka {
+	width: 173px;
+	height: 84px;
+}
 
 /* Filters */
 
@@ -364,67 +531,67 @@ img {
 }
 
 .footer-social {
-	width: 360px;
+	width: 400px;
 	outline: 5px solid rgba(0, 255, 255, 0.7);
 	outline-offset: -5px;
 }
 
 .footer-social ul {
+	display: flex;
+	justify-content: space-between;
+	width: 260px;
 	margin: 0;
 	padding: 0;
+	margin-top: 68px;
 	list-style: none;
+	outline: 5px solid rgba(0, 255, 255, 0.7);
+	outline-offset: -5px;
 }
 
-.social-vk {
-	background: linear-gradient(0deg, #E1E1E1, #E1E1E1), #FFFFFF;
+.social {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 81px;
+	width: 81px;
+	border-radius: 50%;
+	background-color: var(--basic-gray);
 }
 
-.social-vk:hover {
-	background: linear-gradient(0deg, #E74246, #E74246), #FFFFFF;
+.social:hover {
+	background-color: var(--basic-red);
 }
 
-.social-vk:active {
-	fill-opacity: 0.3;
-}
-
-.social-fb {
-	background: linear-gradient(0deg, #E1E1E1, #E1E1E1), #FFFFFF;
-}
-
-.social-fb:hover {
-	background: linear-gradient(0deg, #E74246, #E74246), #FFFFFF;
-}
-
-.social-fb:active {
-	fill-opacity: 0.3;
-}
-
-.social-inst {
-	background: linear-gradient(0deg, #E1E1E1, #E1E1E1), #FFFFFF;
-}
-
-.social-inst:hover {
-	background: linear-gradient(0deg, #E74246, #E74246), #FFFFFF;
-}
-
-.social-inst:active {
+.social:active {
+	box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 	fill-opacity: 0.3;
 }
 
 .page-footer {
-	width: 800px;
+	width: 760px;
 	outline: 5px solid rgba(0, 255, 0, 0.7);
 	outline-offset: -5px;
 }
 
 .page-footer h2 {
+	margin: 0px;
+	margin-top: 75px;
+	margin-bottom: 10px;
+	padding: 0;
 	font-size: 36px;
 	line-height: 36px;
 	font-weight: 700;
 	color: var(--basic-black);
+	outline: 5px solid rgba(255, 255, 0, 0.7);
+	outline-offset: -5px;
 }
 
 .page-footer p {
+	margin: 0px;
+	margin-bottom: 74px;
+	padding: 0;
 	line-height: 22px;
 	color: var(--basic-dark-gray);
+	outline: 5px solid rgba(255, 255, 0, 0.7);
+	outline-offset: -5px
 }
