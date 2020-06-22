@@ -5,6 +5,8 @@
 	--basic-gray-hover: #DFDFDF;
 	--basic-gray-active: #D5D5D5;
 	--basic-gray-special: #666666;
+	--basic-gray-input: #D7DCDE;
+	--basic-gray-input-hover: #B4B9BB;
 	--basic-red: #FB565A;
 	--basic-dark-red: #E74246;
 	--basic-extra-red: #D7373B;
@@ -53,7 +55,6 @@ img {
 	height: auto;
 }
 
-
 .page {
 	height: 100%;
 }
@@ -67,20 +68,22 @@ img {
 
 .container {
 	width: 1160px;
-    margin: 0 auto;
-    padding: 0px;
+	margin: 0 auto;
+	padding: 0px;
 }
 
 
 /*Navigation*/
+
 .main-header {
 	outline: 5px solid rgba(0, 255, 0, 0.3);
-    outline-offset: -5px;
+	outline-offset: -5px;
 }
 
 .main-header-logo {
-	width: 200px;
-    height: 65px;
+	padding-top: 49px;
+	width: 162px;
+	height: 65px;
 	outline: 5px solid rgba(255, 0, 0, 0.3);
 	outline-offset: -5px;
 }
@@ -106,17 +109,19 @@ img {
 
 .site-navigation {
 	display: flex;
+	justify-content: center;
 	flex-wrap: wrap;
-	width: 800px;
+	width: 838px;
 	outline: 5px solid rgba(0, 255, 255, 0.3);
 	outline-offset: -5px;
 }
 
 .user-navigation {
-  width: 260px;
-  text-align: end;
-  outline: 5px solid rgba(255, 0, 255, 0.3);
-  outline-offset: -5px;
+	display: flex;
+	justify-content: flex-end;
+	width: 260px;
+	outline: 5px solid rgba(255, 0, 255, 0.3);
+	outline-offset: -5px;
 }
 
 .site-navigation,
@@ -128,8 +133,17 @@ img {
 
 .site-navigation a,
 .user-navigation a {
-	/*display: block;*/
-	color: var(--basic-black)
+	display: block;
+	padding-top: 75px;
+	padding-bottom: 9px;
+	color: var(--basic-black);
+	outline: 5px solid rgba(255, 0, 255, 0.3);
+	outline-offset: -5px;
+}
+
+.site-navigation li {
+	padding-left: 22px;
+	padding-right: 22px;
 }
 
 .site-navigation a:hover,
@@ -145,11 +159,27 @@ img {
 	opacity: 0.3;
 }
 
+.user-navigation .cart-icon {
+	position: relative;
+}
+
+.cart-icon::before {
+	content: "";
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	background-image: url("img/cart-icon.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+
 /*Информация*/
+
 .main-info {
 	background-color: var(--basic-gray);
 	outline: 5px solid rgba(0, 255, 0, 0.3);
-    outline-offset: -5px;
+	outline-offset: -5px;
 }
 
 .main-info .container {
@@ -160,29 +190,37 @@ img {
 .main-info h3 {
 	margin: 0;
 	padding: 0;
+	padding-top: 78px;
 	font-weight: 500;
 	font-size: 55px;
 	line-height: 55px;
 	color: var(--basic-black);
-	outline: 5px solid rgba(255, 0, 0 , 0.3);
+	outline: 5px solid rgba(255, 0, 0, 0.3);
 	outline-offset: -5px;
 }
 
 .main-info p {
 	margin: 0;
 	padding: 0;
-	outline: 5px solid rgba(255, 0, 0 , 0.3);
+	padding-top: 25px;
+	padding-bottom: 38px;
+	outline: 5px solid rgba(255, 0, 0, 0.3);
 	outline-offset: -5px;
 }
 
 .main-info a {
+	display: inline-block;
+	margin-bottom: 80px;
+	padding-top: 17px;
+	padding-bottom: 15px;
+	padding-left: 54px;
+	padding-right: 54px;
 	font-weight: 500;
 	line-height: 18px;
 	text-transform: uppercase;
 	color: var(--basic-white);
 	background-color: var(--basic-red);
 	border-radius: 3px;
-	
 }
 
 .main-info a:hover {
@@ -197,12 +235,11 @@ img {
 
 
 /*Services*/
+
 .services {
-	outline: 5px solid rgba(255, 0, 0 , 0.3);
+	outline: 5px solid rgba(255, 0, 0, 0.3);
 	outline-offset: -5px;
 }
-
-
 
 .services-list {
 	display: grid;
@@ -214,11 +251,16 @@ img {
 }
 
 .services-list li {
-	outline: 5px solid rgba(0, 255, 255 , 0.3);
+	outline: 5px solid rgba(0, 255, 255, 0.3);
 	outline-offset: -5px;
 }
 
 .services-list h3 {
+	position: relative;
+	margin: 0;
+	margin-top: 251px;
+	margin-bottom: 16px;
+	padding: 0;
 	font-size: 24px;
 	line-height: 30px;
 	font-weight: 700;
@@ -226,11 +268,24 @@ img {
 	color: var(--basic-black);
 }
 
+.services-list p {
+	margin: 0;
+	padding: 0;
+}
+
 .services-list a {
+	display: inline-block;
+	margin-top: 32px;
+	margin-bottom: 80px;
+	padding-top: 17px;
+	padding-bottom: 15px;
+	padding-left: 39px;
+	padding-right: 40px;
 	font-weight: 500;
 	line-height: 18px;
 	text-transform: uppercase;
 	color: var(--basic-white);
+	border-radius: 3px;
 }
 
 
@@ -284,7 +339,9 @@ img {
 	background-color: var(--basic-extra-yellow);
 }
 
+
 /*Преимущества*/
+
 .container .box-1 {
 	display: flex;
 }
@@ -296,43 +353,62 @@ img {
 }
 
 .advantages h3 {
+	margin: 0;
+	margin-top: 73px;
+	margin-bottom: 32px;
+	padding: 0;
 	font-weight: 500;
 	font-size: 45px;
 	line-height: 45px;
 	color: var(--basic-black);
-	outline: 5px solid rgba(255, 0, 0 , 0.3);
+	outline: 5px solid rgba(255, 0, 0, 0.3);
 	outline-offset: -5px;
 }
 
 .advantages h3+p {
-	outline: 5px solid rgba(255, 0, 0 , 0.3);
+	margin: 0;
+	margin-bottom: 40px;
+	padding: 0;
+	outline: 5px solid rgba(255, 0, 0, 0.3);
 	outline-offset: -5px;
 }
 
-.advantages p+p{
+.advantages p+p {
+	margin: 0;
+	margin-bottom: 23px;
+	padding: 0;
 	font-weight: 700;
 	text-transform: uppercase;
-	outline: 5px solid rgba(255, 0, 0 , 0.3);
+	outline: 5px solid rgba(255, 0, 0, 0.3);
 	outline-offset: -5px;
 }
 
 .advantages ul {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 	margin: 0;
+	margin-bottom: 73px;
 	padding: 0;
+	min-height: 120px;
 	list-style: none;
-	outline: 5px solid rgba(255, 0, 0 , 0.3);
+	outline: 5px solid rgba(255, 0, 0, 0.3);
 	outline-offset: -5px;
 }
+
 
 /*Как мы работаем*/
 
 .work {
+	width: 360px;
 	outline: 5px solid rgba(0, 255, 255, 0.3);
 	outline-offset: -5px;
 }
 
 .work img {
-	outline: 5px solid rgba(255, 0, 0 , 0.3);
+	margin-top: 39px;
+	margin-bottom: 37px;
+	outline: 5px solid rgba(255, 0, 0, 0.3);
 	outline-offset: -5px;
 }
 
@@ -340,7 +416,7 @@ img {
 	font-weight: 700;
 	text-align: center;
 	text-transform: uppercase;
-	outline: 5px solid rgba(255, 0, 0 , 0.3);
+	outline: 5px solid rgba(255, 0, 0, 0.3);
 	outline-offset: -5px;
 }
 
@@ -350,7 +426,7 @@ img {
 	padding: 0;
 	list-style: none;
 	line-height: 18px;
-	outline: 5px solid rgba(255, 0, 0 , 0.3);
+	outline: 5px solid rgba(255, 0, 0, 0.3);
 	outline-offset: -5px;
 }
 
@@ -361,9 +437,13 @@ img {
 	color: var(--basic-black);
 }
 
+
 /*Готовые шаблоны на главной странице*/
+
 .sites {
-	outline: 5px solid rgba(0, 255, 240 , 0.3);
+	display: flex;
+	height: 180px;
+	outline: 5px solid rgba(0, 255, 240, 0.3);
 	outline-offset: -5px;
 }
 
@@ -379,18 +459,18 @@ img {
 	opacity: 0.1;
 }
 
-
-.sites ul{
+.sites ul {
 	display: flex;
 	justify-content: space-around;
+	width: 1160px;
 	align-items: center;
 	margin: 0;
 	padding: 0;
 	list-style: none;
 }
 
-.sites li{
-	outline: 5px solid rgba(255, 0, 0 , 0.3);
+.sites li {
+	outline: 5px solid rgba(255, 0, 0, 0.3);
 	outline-offset: -5px;
 }
 
@@ -413,6 +493,7 @@ img {
 	width: 173px;
 	height: 84px;
 }
+
 
 /* Filters */
 
@@ -520,6 +601,7 @@ img {
 
 
 /*Footer*/
+
 .main-footer {
 	outline: 5px solid rgba(255, 0, 0, 0.7);
 	outline-offset: -5px;
@@ -594,4 +676,83 @@ img {
 	color: var(--basic-dark-gray);
 	outline: 5px solid rgba(255, 255, 0, 0.7);
 	outline-offset: -5px
+}
+
+
+/*Modal*/
+
+.modal {
+	outline: 5px solid rgba(255, 255, 0, 0.7);
+	outline-offset: -5px
+}
+
+.modal h2 {
+	font-weight: 700;
+	font-size: 45px;
+	line-height: 53px;
+	color: var(--basic-black);
+}
+
+.modal label {
+	font-weight: 700;
+	line-height: 18px;
+	color: var(--basic-black);
+}
+
+.modal input {
+	width: 360px;
+	height: 50px;
+	box-sizing: border-box;
+}
+
+.modal input,
+textarea {
+	line-height: 18px;
+	color: var(--basic-dark-gray);
+	opacity: 0.5;
+	border: 2px solid var(--basic-gray-input);
+	border-radius: 3px;
+}
+
+.modal input:hover,
+.modal textarea:hover {
+	opacity: 0.5;
+	border: 2px solid var(--basic-gray-input-hover);
+}
+
+.modal input:focus,
+.modal textarea:focus {
+	border: 2px solid var(--basic-black);
+	opacity: 1;
+}
+
+.modal input:invalid,
+.modal textarea:invalid {
+	color: var(--basic-dark-red);
+	border: 2px solid var(--basic-dark-red);
+	opacity: 1;
+}
+
+.send {
+	padding-top: 17px;
+	padding-bottom: 15px;
+	padding-left: 83px;
+	padding-right: 83px;
+	font-weight: 500;
+	line-height: 18px;
+	text-transform: uppercase;
+	color: var(--basic-white);
+	background-color: var(--basic-red);
+	outline: none;
+	border: none;
+	border-radius: 3px;
+}
+
+.send:hover {
+	background-color: var(--basic-dark-red);
+}
+
+.send:active {
+	background-color: var(--basic-extra-red);
+	box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
