@@ -112,7 +112,6 @@ img {
 
 .site-navigation {
 	display: flex;
-	justify-content: center;
 	flex-wrap: wrap;
 	width: 838px;
 	outline: 5px solid rgba(0, 255, 255, 0.3);
@@ -147,6 +146,10 @@ img {
 .site-navigation li {
 	padding-left: 22px;
 	padding-right: 22px;
+}
+
+.site-navigation li:first-child {
+	padding-left: 202px;
 }
 
 .site-navigation a:hover,
