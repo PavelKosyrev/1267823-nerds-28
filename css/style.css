@@ -255,25 +255,19 @@ div.slider {
 	position: absolute;
 	display: flex;
 	top: 317px;
-	right: 533px;
+	right: 518px;
 	z-index: 1000;
 }
 
-.slider li {
-	position: relative;
-	cursor: pointer;
-	display: block;
-	padding-right: 18px;
-
-}
-
-.slider li::before {
-	content: "";
-	position: absolute;
+.slider li button {
+	margin-right: 18px;
 	width: 18px;
-	height: 18px;
+	height: 18px; 
 	background-color: var(--basic-white);
+	outline: none;
+	border: none;
 	border-radius: 50%;
+	cursor: pointer;
 }
 
 .slider li .slide-active::after {
@@ -281,10 +275,11 @@ div.slider {
 	position: absolute;
 	width: 4px;
 	height: 4px;
+	top: 5px;
+	left: 5px;
 	background-color: var(--basic-white);
 	border: 2px solid var(--basic-gray-slider);
 	border-radius: 50%;
-	z-index: 1001;
 }
 
 .slides ul {
@@ -882,9 +877,19 @@ div.slider {
 	top: -2px;
 	background-image: url("../img/checkbox-on.svg");
 	background-repeat: no-repeat;
-	background-position: 0 0;
 	opacity: 0.4;
 }
+
+.filter-input:hover + label::before,
+.filter-input:hover + label::after {
+	opacity:1;
+}
+
+.filter-input:disabled + label::before,
+.filter-input:disabled + label::after {
+	opacity: 0.3;
+} 
+
 
 .filters fieldset + button {
 	height: 50px;
@@ -1014,17 +1019,28 @@ li.catalog-item {
 	border-bottom-right-radius: 5px;
 }
 
+li.catalog-item:hover {
+	box-shadow: 0 6px 15px rgba(0, 1, 1, 0.25);
+}
+
 li.catalog-item::before {
 	content: "";
 	position: absolute;
 	width: 360px;
 	height: 40px;
 	top: -39px;
-	background-image: url("../img/browser.svg");
+	background-image: url("../img/browser-opacity.svg");
 	background-repeat: no-repeat;
 	background-position: 0 0;
-	opacity: 0.12;
 	z-index: 1000;
+}
+
+li.catalog-item:hover::before {
+	background-image: url("../img/browser.svg");
+}
+
+li.catalog-item:hover section.card-box {
+	display: block;
 }
 
 .catalog-item h3 {
