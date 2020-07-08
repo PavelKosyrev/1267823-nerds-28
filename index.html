@@ -4,6 +4,7 @@
       <meta charset="utf-8">
       <title>Дизайн-студия «Nerds»</title>
       <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+      <link href="css/normalize.css" rel="stylesheet">
       <link href="css/style.css" rel="stylesheet">
    </head>
    <body class="page-body">
@@ -14,7 +15,7 @@
                <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип сайта">
                </a>
                <ul class="site-navigation reset-list">
-                  <li class="site-active"><a>Студия</a></li>
+                  <li><a href="#">Студия</a></li>
                   <li><a href="#">Клиенты</a></li>
                   <li><a href="catalog.html">Магазин</a></li>
                   <li><a href="#">Контакты</a></li>
@@ -82,7 +83,8 @@
                <section class="advantages">
                   <h2 class="visually-hidden">Наши преимущества</h2>
                   <h3 class="reset-text">
-                  Мы — маленькая, но гордая<br> дизайн-студия из Краснодара.</h3>
+                     Мы — маленькая, но гордая<br> дизайн-студия из Краснодара.
+                  </h3>
                   <p class="reset-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br> превыше креатива. Работаем не покладая рук, как роботы.</p>
                   <p class="reset-text">Выполняем заказы на разработку:</p>
                   <ul class="reset-list">
@@ -93,7 +95,7 @@
                </section>
                <section class="work">
                   <h2 class="visually-hidden">Как мы работаем</h2>
-                  <img src="img/nerds-logo_2.svg" width="360" height="208" alt="Логотип сайта">
+                  <img src="img/nerds-logo-2.svg" width="360" height="208" alt="Логотип сайта">
                   <p class="reset-text">C 2004 года любим точность во всем:</p>
                   <table>
                      <tr class="one">
@@ -113,7 +115,7 @@
                <h2 class="visually-hidden">Готовые шаблоны сайтов</h2>
                <ul class="reset-list">
                   <li class="html-academy">
-                     <a href="#" aria-label="сайт html-academy"><img src="img/html_academy.svg" width="199" height="68" alt="Логотип сайта html academy"></a>
+                     <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="сайт html-academy"><img src="img/html-academy.svg" width="199" height="68" alt="Логотип сайта html academy"></a>
                   </li>
                   <li class="borodinski">
                      <a href="#" aria-label="сайт borodinski"><img src="img/borodinski.svg" width="209" height="90" alt="Логотип сайта borodinski"></a>
@@ -131,11 +133,12 @@
             <h2 class="visually-hidden">Адресс</h2>
             <img src="img/map.png" width="1440" height="416" alt="Карта">
             <section class="contacts">
-               <h2 class="reset-text">Nёrds design studio</h3>
+               <h2 class="reset-text">Nёrds design studio</h2>
                <div>
-               <address>191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</address>
-               <p class="reset-text tel"><a href="tel.:78122757575">тел. +7 (812) 275-75-75</a><p>
-               </div>  
+                  <address>191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</address>
+                  <p class="reset-text tel"><a href="tel:78122757575">тел. +7 (812) 275-75-75</a>
+                  <p>
+               </div>
                <a href="#">Напишите нам</a>
             </section>
             <img class="map-marker" src="img/map-marker.png" width="231" height="190" alt="Метка на карте">
@@ -181,16 +184,16 @@
             <form action="https://echo.htmlacademy.ru" method="post">
                <div class="name-login">
                   <p class="name reset-text">
-                     <label for="login-login">Ваше имя:</label><br>
+                     <label for="login-login">Ваше имя:</label>
                      <input type="text" name="login" id="login-login" placeholder="Имя Фамилия" required>
                   </p>
                   <p class="email reset-text">
-                     <label for="email-email">Ваше email:</label><br>
+                     <label for="email-email">Ваше email:</label>
                      <input type="email" name="email" id="email-email" placeholder="email@example.com" required>
                   </p>
                </div>
-               <p clas="reset-text">
-                  <label for="comment-comment">Текст письма:</label><br>
+               <p class="reset-text">
+                  <label for="comment-comment">Текст письма:</label>
                   <textarea class="comment" name="comment" id="comment-comment" placeholder="В свободной форме" required></textarea>
                </p>
                <button class="send" type="submit">Отправить</button>

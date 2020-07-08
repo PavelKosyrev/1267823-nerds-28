@@ -4,6 +4,7 @@
       <meta charset="utf-8">
       <title>Дизайн-студия «Nerds»</title>
       <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+      <link href="css/normalize.css" rel="stylesheet">
       <link href="css/style.css" rel="stylesheet">
    </head>
    <body class="page-body">
@@ -14,9 +15,9 @@
                <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип сайта">
                </a>
                <ul class="site-navigation reset-list">
-                  <li><a href="index.html">Студия</a></li>
+                  <li><a href="#">Студия</a></li>
                   <li><a href="#">Клиенты</a></li>
-                  <li class="site-active"><a href="#">Магазин</a></li>
+                  <li class="site-active"><a>Магазин</a></li>
                   <li><a href="#">Контакты</a></li>
                </ul>
                <ul class="user-navigation reset-list">
@@ -40,17 +41,10 @@
                      <div class="range-filter">
                         <div class="range-controls">
                            <div class="scale">
-                              <div class="bar" style="
-                                 width: 30%;
-                                 margin-left: 20%">
-                              </div>
+                              <div class="bar"></div>
                            </div>
-                           <div class="toggle toggle-min" tabindex="0" style="
-                              left: 20%
-                              "></div>
-                           <div class="toggle toggle-max" tabindex="0" style="
-                              left: 50%
-                              "></div>
+                           <div class="toggle toggle-min" tabindex="0"></div>
+                           <div class="toggle toggle-max" tabindex="0"></div>
                         </div>
                         <div class="price-controls">
                            <label class="min-price">
@@ -110,65 +104,73 @@
             <section class="catalog">
                <h2 class="visually-hidden">Список сайтов</h2>
                <section class="sort">
-               <h2 class="visually-hidden">Сортировка товара</h2>
+                  <h2 class="visually-hidden">Сортировка товара</h2>
                   <p class="reset-text">Сортировать:</p>
                   <ul class="reset-list sort-list">
-                    <li class="sort-list-active"><a href="#">По цене</a></li>
-                    <li><a href="#">По типу</a></li>
-                    <li><a href="#">По названию</a></li>
-                    <li class="sort-list-active">
-                      <a href="#" aria-label="по убыванию"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg></a>
-                    </li>
-                    <li>
-                      <a href="#" aria-label="по возрастанию"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg></svg></a>
-                    </li>
+                     <li class="sort-list-active"><a href="#">По цене</a></li>
+                     <li><a href="#">По типу</a></li>
+                     <li><a href="#">По названию</a></li>
+                     <li class="sort-list-active">
+                        <a href="#" aria-label="по убыванию">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                              <path fill="#231F20" d="M5.5 10L0 0h11"/>
+                           </svg>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#" aria-label="по возрастанию">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                              <path fill="#231F20" d="M5.5 0L0 10h11z"/>
+                           </svg>
+                        </a>
+                     </li>
                   </ul>
                </section>
                <ul class="reset-list catalog-list">
                   <li class="catalog-item">
-                     <img class="catalog-item-image" src="img/img_sedona.jpg" width="360" height="580" alt="Cайт Sedona">
+                     <img class="catalog-item-image" src="img/img-sedona.jpg" width="360" height="580" alt="Cайт Sedona">
                      <section class="card-box">
-                        <h3 class="reset-text"><a href="#">Sedona</a></h3>
+                        <h3 class="reset-text card-box-botton"><a href="#">Sedona</a></h3>
                         <p class="reset-text">Информационный сайт<br> для туристов</p>
                         <a href="#" class="catalog-item-price">9 900Р</a>
                      </section>
                   </li>
                   <li class="catalog-item">
-                     <img class="catalog-item-image" src="img/img_pink.jpg" width="360" height="580" alt="Cайт Pink">
+                     <img class="catalog-item-image" src="img/img-pink.jpg" width="360" height="580" alt="Cайт Pink">
                      <section class="card-box">
-                        <h3 class="reset-text"><a href="#">Pink App</a></h3>
+                        <h3 class="reset-text card-box-botton"><a href="#">Pink App</a></h3>
                         <p class="reset-text">Продуктовый лендинг<br> приложения для IOS и Android</p>
                         <a href="#" class="catalog-item-price">9 900Р</a>
                      </section>
                   </li>
                   <li class="catalog-item">
-                     <img class="catalog-item-image" src="img/img_borodinski.jpg" width="360" height="580" alt="Cайт Borodinski">
+                     <img class="catalog-item-image" src="img/img-borodinski.jpg" width="360" height="580" alt="Cайт Borodinski">
                      <section class="card-box">
-                        <h3 class="reset-text"><a href="#">Barbershop</a></h3>
+                        <h3 class="reset-text card-box-botton"><a href="#">Barbershop</a></h3>
                         <p class="reset-text">Сайт салона красоты.<br> Для мужчин, да.</p>
                         <a href="#" class="catalog-item-price">9 900Р</a>
                      </section>
                   </li>
                   <li class="catalog-item">
-                     <img class="catalog-item-image" src="img/img_mishka.jpg" width="360" height="580" alt="Cайт Miskka">
+                     <img class="catalog-item-image" src="img/img-mishka.jpg" width="360" height="580" alt="Cайт Miskka">
                      <section class="card-box">
-                        <h3 class="reset-text"><a href="#">Miskka</a></h3>
+                        <h3 class="reset-text card-box-botton"><a href="#">Miskka</a></h3>
                         <p class="reset-text">Интернет-магазин<br> вязаных игрушек</p>
                         <a href="#" class="catalog-item-price">9 900Р</a>
                      </section>
                   </li>
                   <li class="catalog-item">
-                     <img class="catalog-item-image" src="img/img_study.jpg" width="360" height="580" alt="Cайт Study">
+                     <img class="catalog-item-image" src="img/img-study.jpg" width="360" height="580" alt="Cайт Study">
                      <section class="card-box">
-                        <h3 class="reset-text"><a href="#">A plus</a></h3>
+                        <h3 class="reset-text card-box-botton"><a href="#">A plus</a></h3>
                         <p class="reset-text">Лендинг курсов повышения<br> квалификации</p>
                         <a href="#" class="catalog-item-price">9 900Р</a>
                      </section>
                   </li>
                   <li class="catalog-item">
-                     <img class="catalog-item-image" src="img/img_kvast.jpg" width="360" height="580" alt="Cайт Квас">
+                     <img class="catalog-item-image" src="img/img-kvast.jpg" width="360" height="580" alt="Cайт Квас">
                      <section class="card-box">
-                        <h3 class="reset-text"><a href="#">Кваст</a></h3>
+                        <h3 class="reset-text card-box-botton"><a href="#">Кваст</a></h3>
                         <p class="reset-text">Промо-сайт производителя<br> крафтового пива</p>
                         <a href="#" class="catalog-item-price">9 900Р</a>
                      </section>
@@ -185,12 +187,13 @@
          <section class="address address-catalog">
             <h2 class="visually-hidden">Адресс</h2>
             <img src="img/map.png" width="1440" height="416" alt="Карта">
-            <<section class="contacts">
-               <h2 class="reset-text">Nёrds design studio</h3>
+            <section class="contacts">
+               <h2 class="reset-text">Nёrds design studio</h2>
                <div>
-               <address>191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</address>
-               <p class="reset-text tel"><a href="tel.:78122757575">тел. +7 (812) 275-75-75</a><p>
-               </div>  
+                  <address>191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</address>
+                  <p class="reset-text tel"><a href="tel.:78122757575">тел. +7 (812) 275-75-75</a>
+                  <p>
+               </div>
                <a href="#">Напишите нам</a>
             </section>
             <img class="map-marker" src="img/map-marker.png" width="231" height="190" alt="Метка на карте">
@@ -230,5 +233,28 @@
             </section>
          </div>
       </footer>
+      <section class="modal">
+         <div class="modal-box">
+            <h2 class="reset-text">Напишите нам</h2>
+            <form action="https://echo.htmlacademy.ru" method="post">
+               <div class="name-login">
+                  <p class="name reset-text">
+                     <label for="login-login">Ваше имя:</label>
+                     <input type="text" name="login" id="login-login" placeholder="Имя Фамилия" required>
+                  </p>
+                  <p class="email reset-text">
+                     <label for="email-email">Ваше email:</label>
+                     <input type="email" name="email" id="email-email" placeholder="email@example.com" required>
+                  </p>
+               </div>
+               <p class="reset-text">
+                  <label for="comment-comment">Текст письма:</label>
+                  <textarea class="comment" name="comment" id="comment-comment" placeholder="В свободной форме" required></textarea>
+               </p>
+               <button class="send" type="submit">Отправить</button>
+            </form>
+         </div>
+         <button class="modal-close" type="button" aria-label="Закрыть"></button>
+      </section>
    </body>
 </html>
