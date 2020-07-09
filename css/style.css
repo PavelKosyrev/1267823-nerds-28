@@ -10,6 +10,7 @@
 	--basic-gray-filter: #4D4D4D;
 	--basic-gray-input-hover: #B4B9BB;
 	--basic-gray-slider: #C1C1C1;
+	--basic-gray-toggle: #ABABAB;
 	--basic-red: #FB565A;
 	--basic-dark-red: #E74246;
 	--basic-extra-red: #D7373B;
@@ -39,7 +40,7 @@
 /*Global*/
 
 body {
-	min-width: 1440px;
+	min-width: 1200px;
 	margin: 0;
 	padding: 0;
 	font-family: "Roboto", "Arial", "sans-serif";
@@ -260,7 +261,7 @@ img {
 }
 
 .main-info a:active {
-	color: rgb(255, 255, 255, 0.3);
+	color: rgba(255, 255, 255, 0.3);
 	box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 	background-color: var(--basic-extra-red);
 }
@@ -282,6 +283,7 @@ div.slider {
 }
 
 .slider button {
+	position: relative;
 	width: 18px;
 	height: 18px; 
 	background-color: var(--basic-white);
@@ -423,7 +425,7 @@ li .slide-active::after {
 }
 
 .services-list-one:active {
-	color: rgb(255, 255, 255, 0.3);
+	color: rgba(255, 255, 255, 0.3);
 	box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
 	background-color: var(--basic-extra-red);
 }
@@ -440,7 +442,7 @@ li .slide-active::after {
 }
 
 .services-list-two:active {
-	color: rgb(255, 255, 255, 0.3);
+	color: rgba(255, 255, 255, 0.3);
 	box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
 	background-color: var(--basic-extra-green);
 }
@@ -457,7 +459,7 @@ li .slide-active::after {
 }
 
 .services-list-three:active {
-	color: rgb(255, 255, 255, 0.3);
+	color: rgba(255, 255, 255, 0.3);
 	box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
 	background-color: var(--basic-extra-yellow);
 }
@@ -750,13 +752,13 @@ tr.two td {
 
 .range-filter {
 	width: 260px;
-	margin-top: 49px;
+	margin-top: 53px;
 }
 
 .range-controls {
 	position: relative;
 	height: 41px;
-	margin-bottom: 15px;
+	margin-bottom: 11px;
 	padding-top: 35px;
 	padding-right: 20px;
 	padding-left: 20px;
@@ -770,9 +772,8 @@ tr.two td {
 }
 
 .range-controls .bar {
-	width: 30%;
+	width: 65%;
 	height: 2px;
-	margin-left: 20%;
 	background: var(--basic-green);
 }
 
@@ -785,21 +786,21 @@ tr.two td {
 	position: absolute;
 	top: 26px;
 	left: 0;
-	width: 4px;
-	height: 4px;
+	padding: 2px;
 	border: 8px solid var(--basic-white);
-	background-color: var(--basic-light-black);
+	background-color: var(--basic-gray-toggle);
 	border-radius: 50%;
+	outline: none;
 	box-shadow: 0 2px 1px 0 var(--basic-shadow);
 	cursor: pointer;
 }
 
 .range-controls .toggle-min {
-	left: 20%;
+	left: 18px;
 }
 
 .range-controls .toggle-max {
-	left: 50%;
+	left: 62%;
 }
 
 .price-controls {
@@ -831,11 +832,11 @@ tr.two td {
 }
 
 .legend-grid {
-	margin-top: 52px;
+	margin-top: 53px;
 }
 
 .legend-special {
-	margin-top: 46px;
+	margin-top: 47px;
 }
 
 .legend-grid ul {
@@ -844,7 +845,7 @@ tr.two td {
 
 
 .filters ul {
-	margin-top: 16px;
+	margin-top: 17px;
 	margin-left: 36px;
 	line-height: 19px;
 	/*outline-offset: -5px;
@@ -946,13 +947,13 @@ tr.two td {
 	border: none;
 }
 
-.filters button:hover {
+.filters fieldset + button:hover {
 	background-color: var(--basic-gray-hover);
 }
 
-.filters button:active {
+.filters fieldset + button:active {
 	color: var(--basic-black);
-	color: rgb(0, 0, 0, 0.3);
+	color: rgba(0, 0, 0, 0.3);
 	background-color: var(--basic-gray-active);
 	box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
@@ -1193,7 +1194,7 @@ li.catalog-item:hover section.card-box {
 .pagination-list a:active {
 	background-color: var(--basic-gray-active);
 	box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
-	color: rgb(0, 0, 0, 0.3);
+	color: rgba(0, 0, 0, 0.3);
 }
 
 .pagination-item-current a,
@@ -1211,7 +1212,8 @@ li.catalog-item:hover section.card-box {
 
 .address {
 	position: relative;
-	width: 1440px;
+	min-width: 1200px;
+	max-width: 1440px;
 	margin: 0 auto;
 	margin-top: 85px;
 }
@@ -1273,7 +1275,7 @@ p.tel a {
 }
 
 .contacts div + a:active {
-	color: rgb(255, 255, 255, 0.3);
+	color: rgba(255, 255, 255, 0.3);
 	box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
 	background-color: var(--basic-extra-red);
 }
