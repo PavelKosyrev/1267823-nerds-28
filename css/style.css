@@ -926,7 +926,9 @@ tr.two td {
 }
 
 .filter-input:hover+label::before,
-.filter-input:hover+label::after {
+.filter-input:hover+label::after,
+.filter-input:focus+label::before,
+.filter-input:focus+label::after {
 	opacity: 1;
 }
 
@@ -951,7 +953,8 @@ tr.two td {
 	border: none;
 }
 
-.filters fieldset+button:hover {
+.filters fieldset+button:hover,
+.filters fieldset+button:focus {
 	background-color: var(--basic-gray-hover);
 }
 
@@ -1180,7 +1183,7 @@ li.catalog-item:hover section.card-box {
 	padding-bottom: 15px;
 	padding-right: 20px;
 	padding-left: 20px;
-	margin-right: 11px;
+	margin-right: 12px;
 	line-height: 18px;
 	text-transform: uppercase;
 	color: var(--basic-black);
@@ -1377,9 +1380,10 @@ p.tel a {
 .modal {
 	display: none;
 	position: fixed;
-	bottom: 180px;
+	top: 0;
 	right: 0;
 	left: 0;
+	bottom: 0;
 	z-index: 1001;
 	width: 960px;
 	height: 590px;
@@ -1388,6 +1392,15 @@ p.tel a {
 	outline-offset: -5px;*/
 	background-color: var(--basic-white);
 	box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.modal-show {
+	display: block;
+	animation: bounce 0.6s;
+}
+
+.modal-error {
+	animation: shake 0.6s;
 }
 
 .modal-close {
@@ -1494,13 +1507,12 @@ p.tel a {
 	opacity: 1;
 }
 
-
-/*.modal input:invalid,
+.modal input:invalid,
 .modal textarea:invalid {
 	color: var(--basic-dark-red);
 	border: 2px solid var(--basic-dark-red);
 	opacity: 1;
-}*/
+}
 
 .send {
 	padding-top: 17px;
@@ -1524,4 +1536,39 @@ p.tel a {
 .send:active {
 	background-color: var(--basic-extra-red);
 	box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+}
+
+@keyframes bounce {
+	0% {
+		transform: translateY(-2000px);
+	}
+	70% {
+		transform: translateY(30px);
+	}
+	90% {
+		transform: translateY(-10px);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+
+@keyframes shake {
+	0%,
+	100% {
+		transform: translateX(0);
+	}
+	10%,
+	30%,
+	50%,
+	70%,
+	90% {
+		transform: translateX(-10px);
+	}
+	20%,
+	40%,
+	60%,
+	80% {
+		transform: translateX(10px);
+	}
 }

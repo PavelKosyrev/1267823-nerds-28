@@ -136,10 +136,11 @@
                <h2 class="reset-text">Nёrds design studio</h2>
                <div>
                   <address>191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</address>
-                  <p class="reset-text tel"><a href="tel:78122757575">тел. +7 (812) 275-75-75</a>
+                  <p class="reset-text tel">
+                     <a href="tel:78122757575">тел. +7 (812) 275-75-75</a>
                   <p>
                </div>
-               <a href="#">Напишите нам</a>
+               <a class="modal-message" href="#">Напишите нам</a>
             </section>
             <img class="map-marker" src="img/map-marker.png" width="231" height="190" alt="Метка на карте">
          </section>
@@ -181,25 +182,26 @@
       <section class="modal">
          <div class="modal-box">
             <h2 class="reset-text">Напишите нам</h2>
-            <form action="https://echo.htmlacademy.ru" method="post">
+            <form class="message-form" action="https://echo.htmlacademy.ru" method="post">
                <div class="name-login">
                   <p class="name reset-text">
                      <label for="login-login">Ваше имя:</label>
-                     <input type="text" name="login" id="login-login" placeholder="Имя Фамилия" required>
+                     <input class="name-user" type="text" name="login" id="login-login" placeholder="Имя Фамилия">
                   </p>
                   <p class="email reset-text">
                      <label for="email-email">Ваш email:</label>
-                     <input type="email" name="email" id="email-email" placeholder="email@example.com" required>
+                     <input class="email-user" type="email" name="email" id="email-email" placeholder="email@example.com">
                   </p>
                </div>
                <p class="reset-text">
                   <label for="comment-comment">Текст письма:</label>
-                  <textarea class="comment" name="comment" id="comment-comment" placeholder="В свободной форме" required></textarea>
+                  <textarea class="comment" name="comment" id="comment-comment" placeholder="В свободной форме"></textarea>
                </p>
                <button class="send" type="submit">Отправить</button>
             </form>
          </div>
          <button class="modal-close" type="button" aria-label="Закрыть"></button>
+         <script src="js/message.js"></script>
       </section>
    </body>
 </html>
