@@ -106,7 +106,7 @@ img {
 }
 
 .main-header-logo {
-	width: 200px;
+	width: 362px;
 	height: 65px;
 	padding-top: 49px;
 	/*outline: 5px solid rgba(255, 0, 0, 0.3);
@@ -133,7 +133,7 @@ img {
 .site-navigation {
 	display: flex;
 	flex-wrap: wrap;
-	width: 800px;
+	width: 638px;
 	/*outline: 5px solid rgba(0, 255, 255, 0.3);
 	outline-offset: -5px;*/
 }
@@ -165,16 +165,11 @@ img {
 }
 
 .site-navigation li {
-	padding-left: 22px;
-	padding-right: 22px;
+	padding-right: 44px;
 }
 
-.site-navigation li:first-child {
-	padding-left: 162px;
-}
-
-.site-navigation li:nth-child(3) {
-	padding-left: 26px;
+.site-navigation li:nth-child(2) {
+	padding-right: 48px;
 }
 
 .site-navigation a:hover,
@@ -232,12 +227,16 @@ img {
 	outline-offset: -5px;*/
 }
 
-.main-info p {
+.main-info .slide-text {
 	width: 416px;
 	margin-top: 25px;
 	margin-bottom: 39px;
 	/*outline: 5px solid rgba(255, 0, 0, 0.3);
 	outline-offset: -5px;*/
+}
+
+.main-info .more {
+	width: 300px;
 }
 
 .main-info a {
@@ -291,6 +290,10 @@ div.slider {
 	border: none;
 	border-radius: 50%;
 	cursor: pointer;
+}
+
+.slider button:focus {
+	outline: 1px solid var(--basic-black)
 }
 
 li .slide-active::after {
@@ -1228,10 +1231,18 @@ li.catalog-item:hover section.card-box {
 	margin-top: 85px;
 }
 
+.address iframe {
+  position: relative;
+  z-index: 2;
+  border: none;
+}
+
+
 .contacts {
 	position: absolute;
 	top: 54px;
 	left: 140px;
+	z-index: 1000;
 	width: 319px;
 	height: 308px;
 	background-color: var(--basic-white);
@@ -1323,11 +1334,15 @@ p.tel a {
 
 .footer-social ul {
 	display: flex;
-	justify-content: space-between;
-	width: 260px;
+	flex-wrap: wrap;
+	width: 360px;
 	margin-top: 65px;
 	/*outline: 5px solid rgba(0, 255, 255, 0.7);
 	outline-offset: -5px;*/
+}
+
+.footer-social li {
+	margin-right: 9px;
 }
 
 .social {
