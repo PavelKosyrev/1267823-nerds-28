@@ -367,37 +367,19 @@ li .slide-active::after {
 	outline-offset: -5px;*/
 }
 
+.services-list img {
+	margin-top: 80px;
+}
+
 .services-list h3 {
 	position: relative;
-	margin-top: 251px;
+	margin-top: 18px;
 	margin-bottom: 16px;
 	font-size: 24px;
 	line-height: 30px;
 	font-weight: 700;
 	text-transform: uppercase;
 	color: var(--basic-black);
-}
-
-.services-list h3::before {
-	content: "";
-	position: absolute;
-	bottom: 55px;
-	width: 300px;
-	height: 146px;
-	background-repeat: no-repeat;
-	background-position: 0 0;
-}
-
-.services-list li:nth-child(1) h3::before {
-	background-image: url("../img/img-pc.svg");
-}
-
-.services-list li:nth-child(2) h3::before {
-	background-image: url("../img/img-phone.svg");
-}
-
-.services-list li:nth-child(3) h3::before {
-	background-image: url("../img/img-tv.svg");
 }
 
 .services-list a {
@@ -472,6 +454,7 @@ li .slide-active::after {
 
 .container .box-1 {
 	display: flex;
+	border-top: 2px solid var(--basic-gray);
 }
 
 .advantages {
@@ -481,18 +464,9 @@ li .slide-active::after {
 	outline-offset: -5px;*/
 }
 
-.advantages::after,
-.advantages::before {
-	content: "";
-	position: absolute;
-	width: 1158px;
-	height: 2px;
-	background: var(--basic-gray);
-}
-
 .advantages h3 {
 	margin-top: 74px;
-	margin-bottom: 35px;
+	margin-bottom: 33px;
 	font-weight: 500;
 	font-size: 45px;
 	line-height: 45px;
@@ -517,7 +491,7 @@ li .slide-active::after {
 
 .advantages ul {
 	min-height: 120px;
-	margin-bottom: 73px;
+	margin-bottom: 75px;
 	/*outline: 5px solid rgba(255, 0, 0, 0.3);
 	outline-offset: -5px;*/
 }
@@ -613,19 +587,67 @@ tr.two td {
 
 .sites {
 	position: relative;
-	display: flex;
-	min-height: 180px;
+	border-top: 2px solid var(--basic-gray);
+	border-bottom: 2px solid var(--basic-gray);
 	/*outline: 5px solid rgba(0, 255, 240, 0.3);
 	outline-offset: -5px;*/
 }
 
-.sites::after {
-	content: "";
+.sites ul {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.sites li {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 260px;
+	height: 180px;
+	margin-right: 40px;
+	/*outline: 5px solid rgba(0, 255, 240, 0.3);
+	outline-offset: -5px;*/
+}
+
+.sites li:nth-child(4n) {
+	margin-right: 0px;
+}
+
+.sites li::after {
 	position: absolute;
-	top: 100%;
-	width: 100%;
-	height: 2px;
-	background: var(--basic-gray);
+	top: 50%;
+	right: -20px;
+	content: "";
+	width: 2px;
+	height: 52px;
+	margin-top: -26px;
+	background-color: var(--basic-gray);
+}
+
+.sites li:nth-child(4n)::after {
+	display: none;
+}
+
+.sites .html-academy {
+	position: relative;
+	top: 10px;
+}
+
+.sites .borodinski {
+	position: relative;
+	top: 4px;
+}
+
+.sites .pink {
+	position: relative;
+	top: 4px;
+}
+
+.sites .mishka {
+	position: relative;
+	top: 6px;
 }
 
 .sites a {
@@ -638,89 +660,6 @@ tr.two td {
 
 .sites a:active {
 	opacity: 0.1;
-}
-
-.sites ul {
-	display: flex;
-	flex-wrap: wrap;
-	width: 1160px;
-}
-
-.sites li {
-	/*outline: 5px solid rgba(255, 0, 0, 0.3);
-	outline-offset: -5px;*/
-}
-
-.sites li:nth-child(1) {
-	margin-top: 65px;
-	margin-left: 32px;
-	margin-right: 95px;
-}
-
-.sites li:nth-child(2) {
-	position: relative;
-	margin-top: 46px;
-	margin-right: 104px;
-}
-
-.sites li:nth-child(2)::before {
-	content: "";
-	position: absolute;
-	top: 21px;
-	left: -45px;
-	width: 2px;
-	height: 52px;
-	background: var(--basic-gray)
-}
-
-.sites li:nth-child(2)::after {
-	content: "";
-	position: absolute;
-	top: 21px;
-	right: -44px;
-	width: 2px;
-	height: 52px;
-	background: var(--basic-gray)
-}
-
-.sites li:nth-child(3) {
-	position: relative;
-	margin-top: 65px;
-	margin-right: 120px;
-}
-
-.sites li:nth-child(3)::after {
-	content: "";
-	position: absolute;
-	top: 2px;
-	right: -55px;
-	width: 2px;
-	height: 52px;
-	background: var(--basic-gray)
-}
-
-.sites li:nth-child(4) {
-	margin-top: 52px;
-}
-
-.sites .html-academy {
-	width: 199px;
-	height: 68px;
-}
-
-.sites .borodinski {
-	width: 209px;
-	height: 90px;
-}
-
-.sites .pink {
-	width: 185px;
-	height: 52px;
-}
-
-.sites .mishka {
-	width: 173px;
-	height: 84px;
 }
 
 
@@ -1225,18 +1164,25 @@ li.catalog-item:hover section.card-box {
 
 .address {
 	position: relative;
-	min-width: 1200px;
 	max-width: 1440px;
+	height: 416px;
 	margin: 0 auto;
-	margin-top: 85px;
+	margin-top: 80px;
+	margin-bottom: 5px;
+	background-image: url("../img/map.png");
+	background-repeat: no-repeat;
+	background-position: 0 0;
 }
 
 .address iframe {
-  position: relative;
-  z-index: 2;
-  border: none;
+	z-index: 100;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 416px;
+	border: none;
 }
-
 
 .contacts {
 	position: absolute;
